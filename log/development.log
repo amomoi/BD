@@ -41338,3 +41338,933 @@ Processing by BdleiturasController#index as HTML
 Completed 200 OK in 171ms (Views: 164.4ms | ActiveRecord: 3.4ms | Allocations: 130963)
 
 
+Started GET "/bdleituras/" for ::1 at 2023-09-15 15:06:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BdleiturasController#index as HTML
+  [1m[36mBdsensor Load (1.6ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" IS NULL ORDER BY "bdsensors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bdleituras_controller.rb:120:in `set_bdsensor'
+  Rendering layout layouts/application.html.erb
+  Rendering bdleituras/index.html.erb within layouts/application
+  [1m[36mBdleitura Load (1.4ms)[0m  [1m[34mSELECT "bdleituras".* FROM "bdleituras"[0m
+  ↳ app/views/bdleituras/index.html.erb:17
+  [1m[36mBdsensor Load (0.2ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.3ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.6ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.4ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (1.4ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  Rendered bdleituras/index.html.erb within layouts/application (Duration: 78.5ms | Allocations: 167861)
+  Rendered layout layouts/application.html.erb (Duration: 147.3ms | Allocations: 201211)
+Completed 200 OK in 187ms (Views: 142.6ms | ActiveRecord: 27.8ms | Allocations: 220635)
+
+
+Started GET "/bdusuarios" for ::1 at 2023-09-15 15:06:39 -0300
+Processing by BdusuariosController#index as HTML
+  [1m[36mBdcliente Load (1.4ms)[0m  [1m[34mSELECT "bdclientes".* FROM "bdclientes" WHERE "bdclientes"."id" IS NULL ORDER BY "bdclientes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bdusuarios_controller.rb:77:in `set_bdcliente'
+  Rendering layout layouts/application.html.erb
+  Rendering bdusuarios/index.html.erb within layouts/application
+  [1m[36mBdusuario Load (0.6ms)[0m  [1m[34mSELECT "bdusuarios".* FROM "bdusuarios"[0m
+  ↳ app/views/bdusuarios/index.html.erb:23
+  [1m[36mBdcliente Load (0.1ms)[0m  [1m[34mSELECT "bdclientes".* FROM "bdclientes" WHERE "bdclientes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdusuarios/index.html.erb:33
+  [1m[36mCACHE Bdcliente Load (0.0ms)[0m  [1m[34mSELECT "bdclientes".* FROM "bdclientes" WHERE "bdclientes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdusuarios/index.html.erb:33
+  [1m[36mBdcliente Load (0.1ms)[0m  [1m[34mSELECT "bdclientes".* FROM "bdclientes" WHERE "bdclientes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdusuarios/index.html.erb:33
+  Rendered bdusuarios/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 37653)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 41023)
+Completed 200 OK in 35ms (Views: 16.2ms | ActiveRecord: 6.2ms | Allocations: 48184)
+
+
+Started GET "/bdclientes" for ::1 at 2023-09-15 15:06:40 -0300
+Processing by BdclientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bdclientes/index.html.erb within layouts/application
+  [1m[36mBdcliente Load (0.3ms)[0m  [1m[34mSELECT "bdclientes".* FROM "bdclientes"[0m
+  ↳ app/views/bdclientes/index.html.erb:18
+  Rendered bdclientes/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3388)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6776)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 7885)
+
+
+Started GET "/" for ::1 at 2023-09-15 15:06:41 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.erb within layouts/application
+  Rendered home/index.erb within layouts/application (Duration: 0.5ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3625)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4677)
+
+
+Started GET "/bdleituras" for ::1 at 2023-09-15 15:07:03 -0300
+Processing by BdleiturasController#index as HTML
+  [1m[36mBdsensor Load (3.6ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" IS NULL ORDER BY "bdsensors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bdleituras_controller.rb:120:in `set_bdsensor'
+  Rendering layout layouts/application.html.erb
+  Rendering bdleituras/index.html.erb within layouts/application
+  [1m[36mBdleitura Load (1.0ms)[0m  [1m[34mSELECT "bdleituras".* FROM "bdleituras"[0m
+  ↳ app/views/bdleituras/index.html.erb:17
+  [1m[36mBdsensor Load (0.4ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.2ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.1ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.2ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.1ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  Rendered bdleituras/index.html.erb within layouts/application (Duration: 76.4ms | Allocations: 126896)
+  Rendered layout layouts/application.html.erb (Duration: 81.0ms | Allocations: 130037)
+Completed 200 OK in 89ms (Views: 79.1ms | ActiveRecord: 6.0ms | Allocations: 131196)
+
+
+Started GET "/bdleituras/new" for ::1 at 2023-09-15 15:07:06 -0300
+Processing by BdleiturasController#new as HTML
+  [1m[36mBdsensor Load (0.2ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" IS NULL ORDER BY "bdsensors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bdleituras_controller.rb:120:in `set_bdsensor'
+  Rendering layout layouts/application.html.erb
+  Rendering bdleituras/new.html.erb within layouts/application
+  [1m[36mBdsensor Load (0.3ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors"[0m
+  ↳ app/views/bdleituras/_form.html.erb:28
+  Rendered bdleituras/_form.html.erb (Duration: 23.8ms | Allocations: 7120)
+  Rendered bdleituras/new.html.erb within layouts/application (Duration: 25.6ms | Allocations: 7416)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 10142)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 0.5ms | Allocations: 11176)
+
+
+Started POST "/bdleituras" for ::1 at 2023-09-15 15:07:09 -0300
+Processing by BdleiturasController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bdleitura"=>{"valor"=>"1", "bdsensor_id"=>"2"}, "commit"=>"Create Bdleitura"}
+  [1m[36mBdsensor Load (0.3ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" IS NULL ORDER BY "bdsensors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bdleituras_controller.rb:120:in `set_bdsensor'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bdleituras_controller.rb:43:in `block in create'
+  [1m[36mBdsensor Load (0.1ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bdleituras_controller.rb:43:in `block in create'
+  [1m[36mBdsensor Pluck (6.0ms)[0m  [1m[34mSELECT "bdsensors"."bdcliente_id" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:9:in `check_status'
+  [1m[36mBdcliente Pluck (0.2ms)[0m  [1m[34mSELECT "bdclientes"."ativo_inativo" FROM "bdclientes" WHERE (id=1)[0m
+  ↳ app/models/bdleitura.rb:13:in `check_status'
+  [1m[36mBdsensor Pluck (0.1ms)[0m  [1m[34mSELECT "bdsensors"."ativo_inativo" FROM "bdsensors" WHERE (id=2)[0m
+  ↳ app/models/bdleitura.rb:17:in `check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."ativo_inativo" FROM "bdsensors" WHERE (id=2)[0m
+  ↳ app/models/bdleitura.rb:22:in `check_status'
+  [1m[36mBdusuario Pluck (0.6ms)[0m  [1m[34mSELECT "bdusuarios"."celular", "bdusuarios"."SMS" FROM "bdusuarios" WHERE (bdcliente_id = 1)[0m
+  ↳ app/models/bdleitura.rb:27:in `check_status'
+  [1m[36mBdusuario Load (0.1ms)[0m  [1m[34mSELECT "bdusuarios"."SMS", "bdusuarios"."nome", "bdusuarios"."ativo_inativo", "bdusuarios"."celular" FROM "bdusuarios" WHERE (Bdcliente_id = 1)[0m
+  ↳ app/models/bdleitura.rb:33:in `check_status'
+  [1m[36mBdsensor Pluck (0.2ms)[0m  [1m[34mSELECT "bdsensors"."LI" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:39:in `block in check_status'
+  [1m[36mBdsensor Pluck (0.1ms)[0m  [1m[34mSELECT "bdsensors"."LS" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:49:in `block in check_status'
+  [1m[36mBdleitura Load (0.6ms)[0m  [1m[34mSELECT "bdleituras"."valor" FROM "bdleituras" WHERE (bdsensor_id = 2)[0m
+  ↳ app/models/bdleitura.rb:60:in `all?'
+  [1m[36mBdleitura Load (1.4ms)[0m  [1m[34mSELECT "bdleituras"."valor" FROM "bdleituras" WHERE (bdsensor_id = 2) ORDER BY "bdleituras"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/bdleitura.rb:65:in `block in check_status'
+  [1m[36mBdsensor Pluck (0.2ms)[0m  [1m[34mSELECT "bdsensors"."flag_notificacao" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:73:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_notificacao" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:77:in `block in check_status'
+  [1m[36mBdsensor Pluck (0.1ms)[0m  [1m[34mSELECT "bdsensors"."flag_rearme" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:82:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_rearme" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:86:in `block in check_status'
+  [1m[36mBdsensor Pluck (0.1ms)[0m  [1m[34mSELECT "bdsensors"."flag_mantec" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:91:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_mantec" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:95:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."LI" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:39:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."LS" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:49:in `block in check_status'
+  [1m[36mCACHE Bdleitura Load (0.0ms)[0m  [1m[34mSELECT "bdleituras"."valor" FROM "bdleituras" WHERE (bdsensor_id = 2)[0m
+  ↳ app/models/bdleitura.rb:60:in `all?'
+  [1m[36mCACHE Bdleitura Load (0.0ms)[0m  [1m[34mSELECT "bdleituras"."valor" FROM "bdleituras" WHERE (bdsensor_id = 2) ORDER BY "bdleituras"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/bdleitura.rb:65:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_notificacao" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:73:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_notificacao" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:77:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_rearme" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:82:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_rearme" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:86:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_mantec" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:91:in `block in check_status'
+  [1m[36mCACHE Bdsensor Pluck (0.0ms)[0m  [1m[34mSELECT "bdsensors"."flag_mantec" FROM "bdsensors" WHERE (id = 2)[0m
+  ↳ app/models/bdleitura.rb:95:in `block in check_status'
+  [1m[36mBdleitura Create (4.9ms)[0m  [1m[32mINSERT INTO "bdleituras" ("valor", "bdsensor_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["valor", 1.0], ["bdsensor_id", 2], ["created_at", "2023-09-15 18:07:09.837712"], ["updated_at", "2023-09-15 18:07:09.837712"]]
+  ↳ app/controllers/bdleituras_controller.rb:43:in `block in create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bdleituras_controller.rb:43:in `block in create'
+Redirected to http://localhost:3000/bdleituras/110
+Completed 302 Found in 41ms (ActiveRecord: 18.2ms | Allocations: 18998)
+
+
+Started GET "/bdleituras/110" for ::1 at 2023-09-15 15:07:09 -0300
+Processing by BdleiturasController#show as HTML
+  Parameters: {"id"=>"110"}
+  [1m[36mBdleitura Load (0.2ms)[0m  [1m[34mSELECT "bdleituras".* FROM "bdleituras" WHERE "bdleituras"."id" = $1 LIMIT $2[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/bdleituras_controller.rb:128:in `set_bdleitura'
+  [1m[36mBdsensor Load (0.2ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" IS NULL ORDER BY "bdsensors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bdleituras_controller.rb:120:in `set_bdsensor'
+  Rendering layout layouts/application.html.erb
+  Rendering bdleituras/show.html.erb within layouts/application
+  Rendered bdleituras/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1876)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 4594)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 6677)
+
+
+Started GET "/bdleituras" for ::1 at 2023-09-15 15:07:11 -0300
+Processing by BdleiturasController#index as HTML
+  [1m[36mBdsensor Load (0.2ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" IS NULL ORDER BY "bdsensors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bdleituras_controller.rb:120:in `set_bdsensor'
+  Rendering layout layouts/application.html.erb
+  Rendering bdleituras/index.html.erb within layouts/application
+  [1m[36mBdleitura Load (0.2ms)[0m  [1m[34mSELECT "bdleituras".* FROM "bdleituras"[0m
+  ↳ app/views/bdleituras/index.html.erb:17
+  [1m[36mBdsensor Load (0.1ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.2ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.1ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.1ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mBdsensor Load (0.1ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  [1m[36mCACHE Bdsensor Load (0.0ms)[0m  [1m[34mSELECT "bdsensors".* FROM "bdsensors" WHERE "bdsensors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bdleituras/index.html.erb:21
+  Rendered bdleituras/index.html.erb within layouts/application (Duration: 68.2ms | Allocations: 127959)
+  Rendered layout layouts/application.html.erb (Duration: 70.2ms | Allocations: 131128)
+Completed 200 OK in 73ms (Views: 69.2ms | ActiveRecord: 1.5ms | Allocations: 132141)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8058246136261749225)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(8058246136261749225)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE DATABASE "BD_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "BD_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8058246136261749225)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8058246136261749225)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35mSQL (1.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (18.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdclientes" CASCADE[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "bdclientes" ("id" bigserial primary key, "nome_empresa" character varying, "site" character varying, "ativo_inativo" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdleituras" CASCADE[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "bdleituras" ("id" bigserial primary key, "valor" float, "bdsensor_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "index_bdleituras_on_bdsensor_id" ON "bdleituras" ("bdsensor_id")[0m
+  [1m[35m (31.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdsensors" CASCADE[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "bdsensors" ("id" bigserial primary key, "nome_sensor" character varying, "time_read" integer, "LI" character varying, "LS" character varying, "arg1" character varying, "arg2" character varying, "arg3" character varying, "arg4" character varying, "arg5" character varying, "flag_notificacao" integer, "flag_rearme" integer, "flag_mantec" integer, "ativo_inativo" integer, "bdtipo_id" bigint NOT NULL, "bdcliente_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE INDEX "index_bdsensors_on_bdcliente_id" ON "bdsensors" ("bdcliente_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE INDEX "index_bdsensors_on_bdtipo_id" ON "bdsensors" ("bdtipo_id")[0m
+  [1m[35m (23.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdtipos" CASCADE[0m
+  [1m[35m (66.6ms)[0m  [1m[35mCREATE TABLE "bdtipos" ("id" bigserial primary key, "tipo_sensor" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (84.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdusuarios" CASCADE[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "bdusuarios" ("id" bigserial primary key, "nome" character varying, "email" character varying, "CPF" character varying, "celular" character varying, "senha" character varying, "SMS" character varying, "ativo_inativo" integer, "bdcliente_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (21.7ms)[0m  [1m[35mCREATE INDEX "index_bdusuarios_on_bdcliente_id" ON "bdusuarios" ("bdcliente_id")[0m
+  [1m[35m (68.2ms)[0m  [1m[35mALTER TABLE "bdleituras" ADD CONSTRAINT "fk_rails_bdb7e0b4a0"
+FOREIGN KEY ("bdsensor_id")
+  REFERENCES "bdsensors" ("id")
+[0m
+  [1m[35m (46.3ms)[0m  [1m[35mALTER TABLE "bdsensors" ADD CONSTRAINT "fk_rails_816c07661d"
+FOREIGN KEY ("bdcliente_id")
+  REFERENCES "bdclientes" ("id")
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "bdsensors" ADD CONSTRAINT "fk_rails_48500c3d07"
+FOREIGN KEY ("bdtipo_id")
+  REFERENCES "bdtipos" ("id")
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "bdusuarios" ADD CONSTRAINT "fk_rails_1741a6d4ad"
+FOREIGN KEY ("bdcliente_id")
+  REFERENCES "bdclientes" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (21.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (23.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "0e5aa83b6299b668ae1b879091fa6735d27fa3fe"], ["created_at", "2023-09-15 19:09:02.270652"], ["updated_at", "2023-09-15 19:09:02.270652"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (8.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdclientes" CASCADE[0m
+  [1m[35m (40.7ms)[0m  [1m[35mCREATE TABLE "bdclientes" ("id" bigserial primary key, "nome_empresa" character varying, "site" character varying, "ativo_inativo" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdleituras" CASCADE[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "bdleituras" ("id" bigserial primary key, "valor" float, "bdsensor_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_bdleituras_on_bdsensor_id" ON "bdleituras" ("bdsensor_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdsensors" CASCADE[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "bdsensors" ("id" bigserial primary key, "nome_sensor" character varying, "time_read" integer, "LI" character varying, "LS" character varying, "arg1" character varying, "arg2" character varying, "arg3" character varying, "arg4" character varying, "arg5" character varying, "flag_notificacao" integer, "flag_rearme" integer, "flag_mantec" integer, "ativo_inativo" integer, "bdtipo_id" bigint NOT NULL, "bdcliente_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE INDEX "index_bdsensors_on_bdcliente_id" ON "bdsensors" ("bdcliente_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_bdsensors_on_bdtipo_id" ON "bdsensors" ("bdtipo_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdtipos" CASCADE[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "bdtipos" ("id" bigserial primary key, "tipo_sensor" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "bdusuarios" CASCADE[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "bdusuarios" ("id" bigserial primary key, "nome" character varying, "email" character varying, "CPF" character varying, "celular" character varying, "senha" character varying, "SMS" character varying, "ativo_inativo" integer, "bdcliente_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE INDEX "index_bdusuarios_on_bdcliente_id" ON "bdusuarios" ("bdcliente_id")[0m
+  [1m[35m (114.1ms)[0m  [1m[35mALTER TABLE "bdleituras" ADD CONSTRAINT "fk_rails_bdb7e0b4a0"
+FOREIGN KEY ("bdsensor_id")
+  REFERENCES "bdsensors" ("id")
+[0m
+  [1m[35m (34.8ms)[0m  [1m[35mALTER TABLE "bdsensors" ADD CONSTRAINT "fk_rails_816c07661d"
+FOREIGN KEY ("bdcliente_id")
+  REFERENCES "bdclientes" ("id")
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "bdsensors" ADD CONSTRAINT "fk_rails_48500c3d07"
+FOREIGN KEY ("bdtipo_id")
+  REFERENCES "bdtipos" ("id")
+[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "bdusuarios" ADD CONSTRAINT "fk_rails_1741a6d4ad"
+FOREIGN KEY ("bdcliente_id")
+  REFERENCES "bdclientes" ("id")
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230829133213)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230829132517),
+(20230829132651),
+(20230829132741),
+(20230829133109);
+
+[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-09-15 19:09:03.459043"], ["updated_at", "2023-09-15 19:09:03.459043"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2023-09-15 19:09:03.466755"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "0e5aa83b6299b668ae1b879091fa6735d27fa3fe"], ["created_at", "2023-09-15 19:09:03.472637"], ["updated_at", "2023-09-15 19:09:03.472637"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
