@@ -1,0 +1,2 @@
+module BdtiposHelper
+end

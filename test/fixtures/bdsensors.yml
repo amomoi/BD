@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome_sensor: MyString
+  time_read: 1
+  LI: MyString
+  LS: MyString
+  arg1: MyString
+  arg2: MyString
+  arg3: MyString
+  arg4: MyString
+  arg5: MyString
+  flag_notificacao: 1
+  flag_rearme: 1
+  flag_mantec: 1
+  ativo_inativo: 1
+  bdtipo: one
+  bdcliente: one
+
+two:
+  nome_sensor: MyString
+  time_read: 1
+  LI: MyString
+  LS: MyString
+  arg1: MyString
+  arg2: MyString
+  arg3: MyString
+  arg4: MyString
+  arg5: MyString
+  flag_notificacao: 1
+  flag_rearme: 1
+  flag_mantec: 1
+  ativo_inativo: 1
+  bdtipo: two
+  bdcliente: two

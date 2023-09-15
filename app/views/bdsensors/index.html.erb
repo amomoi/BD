@@ -1,0 +1,68 @@
+<%- model_class = Bdsensor -%>
+<div class="page-header">
+<br>
+<p><font size="5" color="4E6E58">Sensores</font></p>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:nome_sensor) %></th>
+      <th><%= model_class.human_attribute_name(:time_read) %></th>
+      <th><%= model_class.human_attribute_name(:LI) %></th>
+      <th><%= model_class.human_attribute_name(:LS) %></th>
+      <th><%= model_class.human_attribute_name(:arg1) %></th>
+      <th><%= model_class.human_attribute_name(:arg2) %></th>
+      <th><%= model_class.human_attribute_name(:arg3) %></th>
+      <th><%= model_class.human_attribute_name(:arg4) %></th>
+      <th><%= model_class.human_attribute_name(:arg5) %></th>
+      <th><%= model_class.human_attribute_name(:flag_notificacao) %></th>
+      <th><%= model_class.human_attribute_name(:flag_rearme) %></th>
+      <th><%= model_class.human_attribute_name(:flag_mantec) %></th>
+      <th><%= model_class.human_attribute_name(:ativo_inativo) %></th>
+      <th><%= model_class.human_attribute_name(:Tipo_sensor) %></th>
+      <th><%= model_class.human_attribute_name(:Cliente) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bdsensors.each do |bdsensor| %>
+      <tr>
+        <td><%= link_to bdsensor.id, bdsensor_path(bdsensor) %></td>
+        <td><%= bdsensor.nome_sensor %></td>
+        <td><%= bdsensor.time_read %></td>
+        <td><%= bdsensor.LI %></td>
+        <td><%= bdsensor.LS %></td>
+        <td><%= bdsensor.arg1 %></td>
+        <td><%= bdsensor.arg2 %></td>
+        <td><%= bdsensor.arg3 %></td>
+        <td><%= bdsensor.arg4 %></td>
+        <td><%= bdsensor.arg5 %></td>
+        <td><%= bdsensor.flag_notificacao %></td>
+        <td><%= bdsensor.flag_rearme %></td>
+        <td><%= bdsensor.flag_mantec %></td>
+        <td><%= bdsensor.ativo_inativo %></td>
+        <td><%= bdsensor.bdtipo.tipo_sensor%></td>
+        <td><%= bdsensor.bdcliente.nome_empresa %></td>
+        <td><%= link_to  'Leituras', bdsensor_bdleituras_path(bdsensor) %></td>
+        <td><%=l bdsensor.created_at %></td>
+        <td>
+          <%= link_to t('.show', :default => t("helpers.links.show")),
+                      bdsensor_path(bdsensor), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_bdsensor_path(bdsensor), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      bdsensor_path(bdsensor),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_bdsensor_path,
+            :class => 'btn btn-primary' %>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AMPM Control Sensors</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('Ok4.png') %>
+
+
+  </head>
+
+  <body>
+    <p><font size="5" color="4E6E58">ÁREA DO ADMINISTRADOR</font></p>
+    <div class="topnav">
+      <a class=active href="/">Home</a>
+      <a href="/bdclientes">Clientes</a>
+      <a href="/bdusuarios">Usuários</a>
+      <a href="/bdtipos">Tipo de Sensores</a>
+      <a href="/bdsensors">Listagem de Sensores</a>
+      <a href="/bdleituras">Valores das Leituras</a>
+      <a href="/administradors">Administradores</a>
+      <a href="/sair">Sair</a>
+    </div>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<%= form_for @bdsensor, :html => { :class => "form-horizontal bdsensor" } do |f| %>
+
+  <% if @bdsensor.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@bdsensor.errors.count, "error") %> prohibited this bdsensor from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @bdsensor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :nome_sensor, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :nome_sensor, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:nome_sensor) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :time_read, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :time_read, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:time_read) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :LI, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :LI, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:LI) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :LS, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :LS, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:LS) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :arg1, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :arg1, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:arg1) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :arg2, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :arg2, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:arg2) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :arg3, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :arg3, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:arg3) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :arg4, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :arg4, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:arg4) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :arg5, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :arg5, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:arg5) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :flag_notificacao, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+    <%= f.select(:flag_notificacao, options_for_select([["1", "1"], ["0", "0"]], @bdsensor.flag_notificacao), {include_blank: "Selecione"}) %>
+    </div>
+    <%=f.error_span(:flag_notificacao) %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= f.label :flag_rearme, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+    <%= f.select(:flag_rearme, options_for_select([["1", "1"], ["0", "0"]], @bdsensor.flag_rearme), {include_blank: "Selecione"}) %>
+    </div>
+    <%=f.error_span(:flag_rearme) %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= f.label :flag_mantec, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+    <%= f.select(:flag_mantec, options_for_select([["1", "1"], ["0", "0"]], @bdsensor.flag_mantec), {include_blank: "Selecione"}) %>
+    </div>
+    <%=f.error_span(:flag_mantec) %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= f.label :ativo_inativo, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+    <%= f.select(:ativo_inativo, options_for_select([["1", "1"], ["0", "0"]], @bdsensor.ativo_inativo), {include_blank: "Selecione"}) %>
+    </div>
+    <%=f.error_span(:ativo_inativo) %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= f.label :bdtipo_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+    <%= f.collection_select(:bdtipo_id, Bdtipo.all, :id, :tipo_sensor, include_blank: true) %>
+    </div>
+    <%=f.error_span(:bdtipo_id) %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= f.label :bdcliente_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+    <%= f.collection_select(:bdcliente_id, Bdcliente.all, :id, :nome_empresa, include_blank: true) %>
+    </div>
+    <%=f.error_span(:bdcliente_id) %>
+  </div>
+  <br>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                bdsensors_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>
